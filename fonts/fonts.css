@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'Montserrat', sans-serif;
+  src: url(Montserrat-Bold.ttf),
+  
+        url(Montserrat-Medium.ttf),
+        url(Montserrat-Regular.ttf),
+        url(Montserrat-SemiBold.ttf);
+}

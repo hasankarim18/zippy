@@ -1,0 +1,166 @@
+.about-hero{
+    padding:5rem 0;
+   
+}
+
+.about-banner{
+    margin-top:60px;
+    background: linear-gradient(159deg, rgba(255,255,255,0.1) 0%,rgba(255,255,255,0.1) 50%,rgba(255,255,255,0.1) 50%,rgba(204,204,204,0.3) 50%,rgba(204,204,204,0.3) 100%);
+}
+
+.about-banner::before{
+   content: "";
+    background: linear-gradient(to left, rgba(255, 255, 255, 0) 0, #fff 100%), url(../images/about-patern.png) repeat;
+    
+   
+
+    background-size: 320px auto;
+    overflow: hidden;
+    /* opacity: 0.6; */
+    top: 0;
+    /* left: 0; */
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    width: 56%;
+
+}
+
+.about-banner p{
+     color:#75757e;
+    font-size:1rem;
+    font-weight:500;
+    margin-bottom:1.5rem;
+    margin-top:1.5rem;
+    line-height: 2.1rem;
+    page-break-after: 0rem 1rem;
+}
+
+.about-hero-img{
+justify-content: flex-end;
+position: relative;
+}
+
+.about-hero-img img{
+    width:90%;
+    position: relative;
+    top:0;
+    left:70px;
+    
+}
+
+/*moderator code goes here*/
+
+.moderator{
+    margin-top:3rem;
+    
+}
+
+.moderator-pic{
+    position: relative;
+    height: 100%;
+    vertical-align: baseline;
+}
+.moderator-pic img{
+   ;
+}
+
+.moderator-bio{
+    padding-top:3rem;
+}
+
+.moderator-bio h2{
+    font-size: 36px;
+    letter-spacing: -0.6px;
+    margin-top: 0;
+    font-weight: normal;
+    text-transform: none;
+    color: #56565E;
+}
+
+.moderator-bio p{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 2;
+    text-align: left;
+    color: #75757e;
+}
+
+.moderator-bio a{
+    color: #40B252;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+/*about signup form*/
+
+.about-signup{
+    padding: 5rem;
+    background-color:#52535e; 
+    margin-bottom: 3rem;
+    
+}
+
+.about-signup-row{
+    justify-content: center;
+}
+
+.about-signup-info{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+}
+
+.about-signup-info h4{
+    color:white;
+    font-weight: 700;
+}
+.about-signup-info h2{
+    color:white;
+    font-weight: 700;
+}
+
+.about-email-input{
+    justify-content: center;
+}
+
+.a-email-input{
+    display:flex;
+    justify-content: center;
+}
+
+.a-email-input input{
+    padding:0 2rem 0 2rem;
+    margin-right:0.5rem;
+}
+
+.send-mail{
+    font-size: 0.7rem;
+    color:White;
+    text-transform: uppercase;
+    display: inline-block;
+    padding:1rem 4rem;
+    background-color:#3BB44A;   
+    transition: all 0.2s linear !important;
+    box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.2);
+    margin-left: 0.5rem;
+}
+
+.send-mail:hover{
+     margin-left: 0.5rem;
+     color:white;
+}
+
+.send-mail:focus,
+.send-mail:active{
+    margin-left: 0.5rem;
+     color:white;
+}

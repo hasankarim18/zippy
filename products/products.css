@@ -1,0 +1,29 @@
+
+
+.product-banner{
+    padding: 5rem 0;
+
+    background: linear-gradient(160deg, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 50%,rgba(242,242,242,1) 50%,rgba(242,242,242,1) 100%);
+    margin-top:120px;
+}
+
+.p-b-text h1{
+    font-size: 48px;
+    line-height: 1.17;
+    text-align: left;
+    color: #3bb44a;
+    margin-bottom:1.5rem;
+}
+
+.p-b-text p{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 2;
+    text-align: left;
+    color: #75757e;
+    margin-bottom: 0;
+}
+
+.our-products{
+    margin-top:4rem;
+}

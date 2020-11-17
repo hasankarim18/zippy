@@ -1,0 +1,456 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+   
+
+}
+
+img{
+    max-width:100%;
+}
+
+a,a:hover,a:focus{
+    text-decoration: none;
+    margin:0;
+}
+
+ul{
+    list-style: none;
+}
+
+
+
+.logo-container{
+    width:150px;
+}
+
+/*nav section code goes here*/
+
+
+.main-header{
+    padding:1rem 0;
+    background-color:#fafafa;
+    position: fixed;
+    z-index: 99999;
+    width: 100%;
+    top:0;
+    left:0;
+    border-bottom: 1px solid #174A8D;
+
+}
+
+
+.nav-row{
+    justify-content: space-between;
+}
+
+.nav-container{
+    justify-content: flex-end;
+    list-style-type: none;
+    margin-bottom: 0;
+    align-items: center;
+    align-content: center;
+}
+
+.nav-item{
+    margin-left:2.5rem;
+     position: relative;
+
+}
+
+.nav-item a{
+    text-transform: capitalize;
+    color:#75757e ;
+    font-weight:bold;
+}
+
+.nav-item a:hover{
+    color:#5EC16A;
+}
+
+
+
+
+
+
+/*
+
+background-image: linear-gradient(136.73deg, rgb(77, 140, 224) 5.52%, rgb(10, 58, 121) 72.57%);
+
+
+
+
+*/
+
+
+   
+
+
+
+.nav-item::after{
+    position: absolute;
+    left:0;
+    top:35px;
+    content:'';
+    display:block;
+    width:100%;
+    min-height: 3px;
+    background-color:transparent;
+    z-index: 9999;  
+    transition-duration: 0.3s; 
+}
+
+.nav-item:hover::after{
+    display:block;
+    top:25px;
+    background-color:#5EC16A;
+
+}
+
+
+
+
+
+.nav-item #first-drop{
+
+    display:none;
+    position: absolute;
+    top: 20px;
+    left:-10px;
+    padding-left:0px;
+    z-index: 99;
+    background-color:#fafafa;
+    width:200px;
+}
+
+
+.nav-item ul li{
+    
+    padding-top:5px;
+    padding-left:1rem;
+    padding-bottom:0.5rem;
+    transition-duration: 0.3s;
+}
+
+.nav-item ul li:first-child{
+    margin-top:23px;
+    border-top:1px solid #174A8D;
+}
+
+.nav-container .products:hover #first-drop{
+    display:block;
+}
+
+.nav-item ul li:last-child{
+    margin-bottom: 0;
+}
+
+#drop{
+    width:100%;
+    display:inline-block;
+    margin-top:0.5rem;
+    
+}
+
+.nav-item ul li:hover{
+    background:#cccccc;
+}
+
+#drop img{
+    display: inline;
+    width:1rem;
+    margin-right:1rem;
+    filter:grayscale();
+}
+
+.nav-item ul li:hover #drop img{
+    filter:inherit;
+}
+
+
+/*banner section code goes here*/
+
+.banner{
+    position: relative;
+    background: linear-gradient(136.73deg, #4D8CE0 5.52%, #0A3A79 72.57%);
+    margin-top:29px;
+    width:100%;
+  
+      
+}
+
+.banner:before{
+    content: '';
+    background: url(images/7.svg)repeat;
+    background-size: cover;
+    background-position: center;
+    width: 60%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+}
+
+
+.banner-pic{
+    align-items: center;
+    margin-top:3rem;
+    margin-bottom:2rem;
+}
+
+.banner-txt{
+    margin-top:5rem;
+
+}
+
+.banner-txt span{
+    margin-bottom: 1.7rem;
+    display:block;
+}
+
+.banner-txt h1{
+    color:white;
+    font-weight: 700;
+    margin-bottom: 1.7rem;
+}
+
+.banner-offer{
+    list-style-type: disc;
+     margin-bottom:2rem;
+     position: relative;
+    
+}
+
+.offer-info{
+    color:white;
+    
+}
+
+.offer-info p{
+    text-transform: uppercase;
+    font-weight:700;
+   
+}
+
+.learn-more{
+    font-size: 1rem;
+    color:White;
+    text-transform: uppercase;
+    display: inline-block;
+    padding:1rem 5rem;
+    background-color:#FF764B;
+   
+    transition: all 0.2s linear !important;
+}
+
+.learn{
+    width: 100%;
+     margin-bottom: 3rem;
+     
+}
+
+
+/*grow business code goes here*/
+
+.grow-business{
+    margin:5rem 0;
+}
+
+.learn-more:hover{
+    color:white;
+   transform: translateY(-5px);
+    transition: all 0.2s linear !important;    
+
+}
+
+.business-grow-row{
+    justify-content: center;
+}
+
+.grow-text{
+    flex-direction: column;
+    align-items: center;
+}
+
+.grow-text h2{
+    font-weight: 700;
+    color:#3BB44A;
+    margin-bottom:1.5rem;
+    
+}
+
+.grow-text p{
+    color:#75757e;
+    font-size:1rem;
+    font-weight:700;
+    margin-bottom:1.5rem;
+    line-height: 2.1rem;
+}
+
+.grow-started{
+     font-size: 1rem;
+    color:White;
+    text-transform: uppercase;
+    display: inline-block;
+    padding:1rem 5rem;
+    background-color:#3BB44A;   
+    transition: all 0.2s linear !important;
+    box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.grow-started:hover{
+    color:white;
+    transform:translateY(-5px);
+}
+
+
+/*our product code goes here*/
+
+.our-products{
+    margin-bottom: 5rem;
+}
+
+.our-products h3{
+    font-weight: 700;
+    color:#52535e;
+    margin-bottom: 3rem;
+}
+
+.product-row{
+    
+    justify-content: space-between;
+}
+
+.product{
+    min-height: 240px;
+    max-height: 240px;
+    border:1px solid #848484;
+    min-width: 300px;
+    justify-content: center;
+    align-items: center;
+    background-color: #FAFAFA;
+}
+
+.product a{
+    display:inline-block;
+}
+
+.product img{
+    max-width:90%;
+
+}
+
+.product2{
+    min-height: 300px;
+}
+
+.p-text{
+    padding:1rem;
+}
+
+.our-products p{
+     color:#75757e;
+    font-size:1rem;
+    font-weight:700;
+    margin-bottom:1.5rem;
+    margin-top:1.5rem;
+    line-height: 2.1rem;
+    page-break-after: 0rem 1rem;
+}
+
+
+.product-col{
+    display:flex;
+    flex-direction: column;
+
+}
+
+
+/*footer section goes here*/
+
+.main-footer{
+    background-color:#F2F1F1;
+    padding: 5rem;
+}
+
+.upper-footer{
+    display:flex;
+    justify-content: space-between;
+}
+
+.footer-links h6 {
+    font-size:1.4rem;
+    color:#52525b;
+
+}
+
+.link-heading{
+    margin-bottom: 1.5rem;
+}
+.link-name{
+    margin-bottom: 1.5rem;
+    
+}
+
+.link-name a{
+    color:#828286;
+}
+
+.divider-row {
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.divider-footer{
+    min-height: 2px;
+    background-color:#dfe0e0;
+}
+
+
+/*icon row code goes here*/
+.icons-term{
+    justify-content: space-between;
+    padding:0 5rem;
+}
+
+.terms small{
+    font-size: 0.8rem;
+    color:#828286;
+}
+
+.icons{
+    justify-content:flex-end;
+}
+
+.icon-container{
+    display:flex;
+    justify-content: flex-end;
+    filter: invert(0.5);
+}
+
+.icon-container li{
+    margin-left:2.5rem;
+
+
+}
+
+.icon-container li i{
+    font-size:1.5rem;
+}
+
+
+
+/*product page css goes here*/
+
+.product-banner{
+    
+}
